@@ -5,7 +5,7 @@ import javax.persistence.Table;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
+@Table(name = "userss")
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -45,4 +45,13 @@ public class User {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+
+	public String getFamilyName() {
+		return familyName;
+	}
+
+	public void setFamilyName(String familyName) {
+		this.familyName = familyName;
+	}
+	
 }

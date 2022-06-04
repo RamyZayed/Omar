@@ -25,4 +25,8 @@ public class UserService {
 		userRepository.save(user);
 		return "success";
 	}
+	
+	public List<User> getbyFamily(String fam){
+		return userRepository.findByfamilyNameContaining(fam);
+	}
 }
